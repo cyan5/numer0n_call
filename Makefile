@@ -8,8 +8,8 @@ c_func.o: c_func.c
 
 .PHONY: clean
 clean:
-	del /s ./a.out *.o
-	@echo clean completed.
+	rm -rfv ./a.out *.o
+	@echo completed.
 
 # depends header
 

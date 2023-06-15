@@ -2,6 +2,7 @@
  * cyan5   */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "c_func.h"
 
 int main(void){
@@ -29,9 +30,7 @@ int main(void){
     }
 
     /* 関数内で定義 */
-
     int idx;
-    int stop;
     int flag_zero;
     hash *hash_lst = NULL;
     int idx_lst[HIST];
@@ -40,12 +39,11 @@ int main(void){
     for(int depth=0; depth<HIST; depth++){
 
         /* 数字の入力 */
-        printf("start sequence %d\n", depth);
-        printf("num 0 1 2 ? > ");
-        scanf("%d %d %d", &call_hist[depth*3], &call_hist[depth*3+1], &call_hist[depth*3+2]);
-
-        /* 入力した数字を出力 */
-        printf("%d%d%d\n", call_hist[depth*3], call_hist[depth*3+1], call_hist[depth*3+2]);
+        printf("question %d > ", depth+1);
+        // printf("num 0 1 2 ? > ");
+        if(3 != scanf("%d %d %d", &call_hist[depth*3], &call_hist[depth*3+1], &call_hist[depth*3+2])){
+            fprintf(stderr, "input error.\n");
+        }
 
         /* typeを更新 すべてのdepthと比較。DIVが出てきたらDIVで確定なのでbreak
          * 最初がtype == DIV (0) のとき更新の必要なし */
@@ -81,7 +79,7 @@ int main(void){
             }
         }
 
-        printf("\n");
+        // printf("\n");
         for(int i=0; i<idx; i++){
             printf("%d%d%d ", call_lst[i*3], call_lst[i*3+1], call_lst[i*3+2]);
         }
@@ -89,6 +87,5 @@ int main(void){
         printf("\n");
     }
 
-    scanf("%d", &stop);
     return 0;
 }
