@@ -45,7 +45,6 @@ int main(void){
 
         /* 数字の入力 */
         printf("question %d > ", depth+1);
-        // printf("num 0 1 2 ? > ");
         if(3 != scanf("%d %d %d", &call_hist[depth*3], &call_hist[depth*3+1], &call_hist[depth*3+2])){
             fprintf(stderr, "input error.\n");
         }
