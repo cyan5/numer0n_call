@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "c_func.h"
+#include "func.h"
 
 int main(void){
 
@@ -29,6 +29,11 @@ int main(void){
         }
     }
 
+    printf("input num as \"0 1 2\"\n");
+
+
+
+    /* ここから下の内容はnumer0n_serchでも使用できるようにする */
     /* 関数内で定義 */
     int idx;
     int flag_zero;
