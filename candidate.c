@@ -39,7 +39,7 @@ int main(void){
     int flag_zero;
     hash *hash_lst = NULL;
     int idx_lst[HIST];
-    int type = NEU;
+    int type = NU;
 
     for(int depth=0; depth<HIST; depth++){
 
@@ -55,7 +55,7 @@ int main(void){
         if(type){
             for(int i=0; i<depth; i++){
                 type = calc_type(&call_hist[depth*3], &call_hist[i*3], type);
-                if(type == DIV){
+                if(type == DV){
                     break;
                 }
             }

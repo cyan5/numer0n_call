@@ -6,11 +6,11 @@
 #define HIST 10
 
 enum type{
-    DIV,      /* 全てを区別する。notを返す */
-    NEU,      /* 全て区別しない            */
-    LM,       /* LとMは区別しない          */
-    LR,       /* LとRは区別しない          */
-    MR        /* MとRは区別しない          */
+    DV,     /* 全てを区別する。notを返す */
+    NU,     /* 全て区別しない            */
+    LM,     /* LとMは区別しない          */
+    LR,     /* LとRは区別しない          */
+    MR      /* MとRは区別しない          */
 };
 
 typedef struct hash{
