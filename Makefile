@@ -1,7 +1,7 @@
 .PHONY: ./a.out
 ./a.out: main.o cand.o
 	gcc -Wall -O2 main.o cand.o
-cand.o: main.c
+main.o: main.c
 	gcc -Wall -O2 -c -o main.o main.c
 cand.o: cand.c
 	gcc -Wall -O2 -c -o cand.o cand.c
