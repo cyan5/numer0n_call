@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "func.h"
+#include "cand.h"
 
 int calc_idx(int cand[3], int call_hist[3], int type){
 

@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "func.h"
+#include "cand.h"
 
 int main(void){
 
