@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "c_func.h"
+#include "func.h"
 
 int main(void){
 
