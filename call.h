@@ -1,3 +1,6 @@
+/* call/h
+ * cyan5   */
+
 #ifndef CFUNC
 #define CFUNC
 
